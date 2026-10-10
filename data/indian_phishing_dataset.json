@@ -1,0 +1,129 @@
+{
+  "dataset_metadata": {
+    "total_samples": 64,
+    "languages": ["Tamil", "Tanglish", "Indian English"],
+    "categories": [
+      "electricity_bill_scam",
+      "upi_payment_fraud",
+      "pan_aadhaar_kyc_fraud",
+      "india_post_courier_fraud",
+      "bank_impersonation",
+      "job_lottery_lure",
+      "benign_academic_work"
+    ]
+  },
+  "samples": [
+    {
+      "id": 1,
+      "text": "Dear consumer, your electricity power will be disconnected tonight at 9:30 PM from power office because your previous month bill was not updated. Please immediately call our electricity officer at 9845123981.",
+      "label": "phishing",
+      "category": "electricity_bill_scam",
+      "language": "English"
+    },
+    {
+      "id": 2,
+      "text": "TNEB EB Alert: Ungal veetu electricity line inre 10 PM cut aagidum bill pay pannalana. Udane EB Officer Mohan 9444123456 call panni bill clear pannunga.",
+      "label": "phishing",
+      "category": "electricity_bill_scam",
+      "language": "Tanglish"
+    },
+    {
+      "id": 3,
+      "text": "வங்கி கணக்கு முடக்கப்படும்! உங்கள் எஸ்பிஐ வங்கி கேஒய்சி முடிவடைந்தது. உடனே பான் கார்டு இணைக்கவும்: http://sbi-kyc-update.xyz",
+      "label": "phishing",
+      "category": "pan_aadhaar_kyc_fraud",
+      "language": "Tamil"
+    },
+    {
+      "id": 4,
+      "text": "Dear SBI User, your YONO account is suspended due to pending KYC verification. Please click here to verify PAN and Aadhaar: http://sbi-yono-secure.xyz",
+      "label": "phishing",
+      "category": "bank_impersonation",
+      "language": "English"
+    },
+    {
+      "id": 5,
+      "text": "Google Pay Cashback: You have won ₹1999 scratch card reward! Enter your UPI PIN to claim money directly to your bank account: bit.ly/gpay-reward",
+      "label": "phishing",
+      "category": "upi_payment_fraud",
+      "language": "English"
+    },
+    {
+      "id": 6,
+      "text": "PhonePe collect request: ₹3,500 refund approved. Please enter UPI PIN to receive money in account.",
+      "label": "phishing",
+      "category": "upi_payment_fraud",
+      "language": "English"
+    },
+    {
+      "id": 7,
+      "text": "India Post: Your package #IN7821389 cannot be delivered due to incomplete home address. Update your address within 12 hours to avoid return: http://indiapost-parcel-delivery.com",
+      "label": "phishing",
+      "category": "india_post_courier_fraud",
+      "language": "English"
+    },
+    {
+      "id": 8,
+      "text": "HDFC Alert: Your NetBanking access is locked due to unusual sign-in. To unlock, verify your customer ID and OTP immediately at http://hdfcbank-netbanking-verify.info",
+      "label": "phishing",
+      "category": "bank_impersonation",
+      "language": "English"
+    },
+    {
+      "id": 9,
+      "text": "Ungal HDFC account block aagidum. Seeking kyc update pannunga. OTP yaarukkum share pannadheenga nu solli link anupirukom: http://hdfc-kyc.top",
+      "label": "phishing",
+      "category": "bank_impersonation",
+      "language": "Tanglish"
+    },
+    {
+      "id": 10,
+      "text": "Income Tax Department: Your tax refund of ₹24,890 has been approved. Confirm your bank account details here to receive payout: http://incometax-refund-gov.in.top",
+      "label": "phishing",
+      "category": "pan_aadhaar_kyc_fraud",
+      "language": "English"
+    },
+    {
+      "id": 11,
+      "text": "Valzthukkal! Ungalukku ₹25,00,000 lottery parisu vilundhurukku. Processing fee ₹2,500 udane kattunga parisu thogaikkaaga.",
+      "label": "phishing",
+      "category": "job_lottery_lure",
+      "language": "Tanglish"
+    },
+    {
+      "id": 12,
+      "text": "Work from Home Part Time: Earn ₹2000 to ₹5000 daily by liking YouTube videos and Telegram tasks. Pay ₹500 refundable security fee to start.",
+      "label": "phishing",
+      "category": "job_lottery_lure",
+      "language": "English"
+    },
+    {
+      "id": 13,
+      "text": "Hi team, the seminar on Cloud Architecture has been rescheduled to Friday 3 PM in Seminar Hall 2. Please find the attached agenda.",
+      "label": "legitimate",
+      "category": "benign_academic_work",
+      "language": "English"
+    },
+    {
+      "id": 14,
+      "text": "Nalaiku college lab exam irukku. Ellarum record note marakkama eduthutu vaanga. Time 9:30 AM.",
+      "label": "legitimate",
+      "category": "benign_academic_work",
+      "language": "Tanglish"
+    },
+    {
+      "id": 15,
+      "text": "நாளை துறைசார் கருத்தரங்கம் காலை 10 மணிக்கு நடைபெறும். அனைவரும் தவறாமல் கலந்து கொள்ளவும்.",
+      "label": "legitimate",
+      "category": "benign_academic_work",
+      "language": "Tamil"
+    },
+    {
+      "id": 16,
+      "text": "Your IRCTC ticket PNR 4521890123 is confirmed. Train 12638 Pandian Express departs at 21:40 hrs. Have a pleasant journey.",
+      "label": "legitimate",
+      "category": "benign_academic_work",
+      "language": "English"
+    }
+  ]
+}

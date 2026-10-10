@@ -1,0 +1,6 @@
+{
+  "name": "PhishGuard AI",
+  "description": "Explainable phishing triage for emails, links and messages with heuristic rule-based detection.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

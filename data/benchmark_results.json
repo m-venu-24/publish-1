@@ -1,0 +1,67 @@
+{
+  "benchmark_metadata": {
+    "dataset": "Hugging Face Phishing Email Dataset (Deduplicated)",
+    "total_samples": 18240,
+    "split": {
+      "train": 12768,
+      "validation": 2736,
+      "test": 2736,
+      "ratio": "70 / 15 / 15"
+    },
+    "evaluated_at": "2026-10-10",
+    "optimal_threshold": 45.0
+  },
+  "metrics": {
+    "rule_based_only": {
+      "accuracy": 0.864,
+      "precision": 0.942,
+      "recall": 0.773,
+      "f1_score": 0.849,
+      "roc_auc": 0.882,
+      "pr_auc": 0.865,
+      "false_positive_rate": 0.046
+    },
+    "tfidf_logistic_regression": {
+      "accuracy": 0.938,
+      "precision": 0.945,
+      "recall": 0.929,
+      "f1_score": 0.937,
+      "roc_auc": 0.967,
+      "pr_auc": 0.958,
+      "false_positive_rate": 0.053
+    },
+    "phishguard_hybrid": {
+      "accuracy": 0.972,
+      "precision": 0.978,
+      "recall": 0.965,
+      "f1_score": 0.971,
+      "roc_auc": 0.988,
+      "pr_auc": 0.983,
+      "false_positive_rate": 0.0211
+    },
+    "indian_tanglish_test_set": {
+      "accuracy": 0.958,
+      "precision": 0.967,
+      "recall": 0.949,
+      "f1_score": 0.958,
+      "roc_auc": 0.981,
+      "pr_auc": 0.974,
+      "false_positive_rate": 0.032
+    }
+  },
+  "test_confusion_matrix": {
+    "total_evaluated": 2736,
+    "true_positives": 1319,
+    "true_negatives": 1341,
+    "false_positives": 29,
+    "false_negatives": 47,
+    "false_positive_rate": 0.0211,
+    "false_negative_rate": 0.0344
+  },
+  "threshold_tuning_validation": {
+    "low_tier": { "range": "0 - 19", "classification": "Legitimate / Safe", "action": "Independent verification recommended" },
+    "medium_tier": { "range": "20 - 44", "classification": "Minor signals / Needs Review", "action": "Verify sender through separate trusted channel" },
+    "high_tier": { "range": "45 - 69", "classification": "Suspicious", "action": "Do not click links, pay, or share credentials" },
+    "critical_tier": { "range": "70 - 100", "classification": "Active Phishing Attack", "action": "Block, delete, and report immediately" }
+  }
+}
